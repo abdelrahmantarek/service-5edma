@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1006230507675",
+    "project_id": "service-app-17226",
+    "storage_bucket": "service-app-17226.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006230507675:android:b0d5af5814f8ba957f363e",
+        "android_client_info": {
+          "package_name": "com.fixawy.service_fix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1006230507675-f6lcmd3anfi9u8ojcccdo8lsl8spbd31.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANJs6A5lq4h4yMtKxQKD96DrQ1f3N91Sw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1006230507675-f6lcmd3anfi9u8ojcccdo8lsl8spbd31.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

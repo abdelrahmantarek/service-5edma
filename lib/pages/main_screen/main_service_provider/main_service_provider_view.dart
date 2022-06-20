@@ -48,10 +48,10 @@ class _MainServiceProviderPageState extends State<MainServiceProviderPage> {
                 children: [
                    const SettingsPage(),
                    const ServiceProviderReservationPage(),
-                   ProfileServiceProviderPage(
-                     serviceProvider: ServiceProvider.fromJson(Get.find<UserData>().toJson()),
-                     section: ServiceProvider.fromJson(Get.find<UserData>().toJson()).section,
-                   ),
+                   // ProfileServiceProviderPage(
+                   //   serviceProvider: ServiceProvider.fromJson(Get.find<UserData>().toJson()),
+                   //   section: ServiceProvider.fromJson(Get.find<UserData>().toJson()).section,
+                   // ),
                 ],
               ),
 
@@ -63,13 +63,10 @@ class _MainServiceProviderPageState extends State<MainServiceProviderPage> {
               currentIndex: controller.currentIndex.value,
               itemPadding: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
               onTap: (index){
-                print(index);
-
                 if(index == 0){
                   SignInLogic.logOutPop(context);
                   return;
                 }
-
                 controller.changePage(index);
               },
               items: [
@@ -87,12 +84,12 @@ class _MainServiceProviderPageState extends State<MainServiceProviderPage> {
                   selectedColor: Colors.pink,
                 ),
 
-                /// Profile
-                SalomonBottomBarItem(
-                  icon: Icon(Icons.person),
-                  title: Text("شخصي"),
-                  selectedColor: Colors.teal,
-                ),
+                // /// Profile
+                // SalomonBottomBarItem(
+                //   icon: Icon(Icons.person),
+                //   title: Text("شخصي"),
+                //   selectedColor: Colors.teal,
+                // ),
               ],
             );
 

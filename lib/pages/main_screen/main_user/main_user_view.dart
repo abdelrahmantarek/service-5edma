@@ -55,10 +55,10 @@ class _MainUserPageState extends State<MainUserPage> {
               if(controller.currentIndex.value == 2){
                 text = "حجوزاتي";
               }
-
-              if(controller.currentIndex.value == 3){
-                text = "الشكاوى";
-              }
+              //
+              // if(controller.currentIndex.value == 3){
+              //   text = "الشكاوى";
+              // }
 
               return Text(text,style: Get.textTheme.bodyText1);
 
@@ -92,7 +92,7 @@ class _MainUserPageState extends State<MainUserPage> {
                   SizedBox(),
                   SectionsPage(),
                   MyReservationPage(),
-                  ComplainGetPage(),
+                  // ComplainGetPage(),
                 ],
               ),
 
@@ -134,13 +134,13 @@ class _MainUserPageState extends State<MainUserPage> {
                   title: Text("حجوزاتي"),
                   selectedColor: Colors.teal,
                 ),
-
-                /// Profile
-                SalomonBottomBarItem(
-                  icon: Icon(Icons.account_tree_sharp),
-                  title: Text("الشكاوي"),
-                  selectedColor: Colors.teal,
-                ),
+                //
+                // /// Profile
+                // SalomonBottomBarItem(
+                //   icon: Icon(Icons.account_tree_sharp),
+                //   title: Text("الشكاوي"),
+                //   selectedColor: Colors.teal,
+                // ),
 
               ],
             );

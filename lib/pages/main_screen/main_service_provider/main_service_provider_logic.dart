@@ -3,14 +3,14 @@ import 'package:get/get.dart';
 
 class MainServiceProviderLogic extends GetxController with GetSingleTickerProviderStateMixin{
 
-  RxInt currentIndex = 0.obs;
+  RxInt currentIndex = 1.obs;
   RxBool showBadge = true.obs;
   TabController? tabController;
 
 
   @override
   void onInit() {
-    tabController = TabController(initialIndex: currentIndex.value, vsync: this, length: 3);
+    tabController = TabController(initialIndex: currentIndex.value, vsync: this, length: 2);
     super.onInit();
   }
 

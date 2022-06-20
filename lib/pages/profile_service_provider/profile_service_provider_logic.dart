@@ -22,6 +22,9 @@ class ProfileServiceProviderLogic extends GetxController{
 
   @override
   void onInit() {
+    if(Get.arguments == null){
+      return;
+    }
     if(Get.arguments["serviceProvider"] != null){
       serviceProvider = Get.arguments["serviceProvider"];
     }

@@ -59,9 +59,8 @@ class SignInLogic extends GetxController {
 
         btnController.success();
 
-        await Future.delayed(Duration(seconds: 2));
+        await Future.delayed(const Duration(seconds: 2));
 
-        print(da.toString());
         success("لقد تم تسجيل الدخول بنجاح");
 
         Get.offAndToNamed(MainScreenPage.routeName);
@@ -77,7 +76,8 @@ class SignInLogic extends GetxController {
     }).catchError((onError){
 
       // result -------- error
-
+      btnController.stop();
+      btnController.reset();
       loading.value=false;
       error(onError.toString());
     });

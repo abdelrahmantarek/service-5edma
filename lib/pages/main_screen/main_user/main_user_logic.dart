@@ -3,16 +3,13 @@ import 'package:get/get.dart';
 
 class MainUserLogic extends GetxController with GetSingleTickerProviderStateMixin{
 
-
   RxInt currentIndex = 1.obs;
   RxBool showBadge = true.obs;
   TabController? tabController;
 
-
-
   @override
   void onInit() {
-    tabController = TabController(initialIndex: currentIndex.value, vsync: this, length: 4);
+    tabController = TabController(initialIndex: currentIndex.value, vsync: this, length: 3);
     super.onInit();
   }
 
@@ -20,7 +17,5 @@ class MainUserLogic extends GetxController with GetSingleTickerProviderStateMixi
     currentIndex.value = index;
     tabController!.animateTo(currentIndex.value,duration: const Duration(milliseconds: 1), curve: Curves.easeOut);
   }
-
-
 
 }
